@@ -13,11 +13,11 @@ option(BUILD_HELLO_WORLD "Build Hello World application" ON)
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
 
 # Find packages, in this case OpenCV
-find_package( OpenCV REQUIRED )
+# find_package( OpenCV REQUIRED )
 
 # Add include dirs. 
 # You can use vars from find_package or vars you declared yourself. 
-include_directories( ${OpenCV_INCLUDE_DIRS} )
+# include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 # Sets the compiler flags for this project. These flags are passed to your C++ compiler
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -W -Wall -Wunreachable-code -std=c++1y -O3 -g")
